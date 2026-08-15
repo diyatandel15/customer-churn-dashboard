@@ -209,6 +209,7 @@ def main():
 
     st.markdown("Upload a customer CSV to explore the data and predict churn using the trained ML model.")
     st.markdown("---")
+    
     model = load_model()
 
     uploaded_file = st.file_uploader("Upload customer CSV", type=["csv"])
