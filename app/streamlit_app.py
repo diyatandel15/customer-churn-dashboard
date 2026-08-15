@@ -242,3 +242,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Footer
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; color: grey; font-size: 14px;'>"
+    "Made with ❤️ by <b>Diya Tandel</b> | "
+    "<a href='https://linkedin.com/in/diya-tandel-sv1506/' target='_blank'>LinkedIn</a> | "
+    "<a href='https://github.com/diyatandel15' target='_blank'>GitHub</a>"
+    "</div>",
+    unsafe_allow_html=True
+)
