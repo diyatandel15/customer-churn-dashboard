@@ -135,4 +135,10 @@ Both models use a preprocessing pipeline with standard scaling for numeric featu
 
 MIT
 
+## 👩‍💻 Author
+**Diya Tandel**  
+GitHub: @diyatandel15  
+LinkedIn: [linkedin.com/in/diya-tandel-sv1506](https://www.linkedin.com/in/diya-tandel-sv1506/)
 
+---
+If you found this project helpful, give it a ⭐ on GitHub!
