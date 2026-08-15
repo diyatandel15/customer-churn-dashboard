@@ -209,13 +209,17 @@ def render_single_prediction(model):
             st.error(f"⚠️ High Risk to Churn! Probability: {prob:.2%}")
         else:
             st.success(f"✅ Low Risk. Will Stay. Probability: {1-prob:.2%}")
-
 def main():
-    st.title("Customer Churn Prediction Dashboard")
-    st.markdown(
-        "Upload a customer CSV to explore the data and predict churn using the trained ML model."
-    )
+    # HEADER WITH LOGO
+    col1, col2 = st.columns([1, 6])
+    with col1:
+        st.image("https://i.imgur.com/8Km9tLL.png", width=80)  # temp logo
+    with col2:
+        st.title("Customer Churn Prediction Dashboard")
+        st.markdown("*Powered by Machine Learning | Data-Driven Retention Insights*")
 
+    st.markdown("Upload a customer CSV to explore the data and predict churn using the trained ML model.")
+    st.markdown("---")
     model = load_model()
 
     uploaded_file = st.file_uploader("Upload customer CSV", type=["csv"])
