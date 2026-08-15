@@ -2,6 +2,14 @@
 
 An end-to-end data science project that combines **SQL analytics**, **exploratory data analysis**, **machine learning**, and an interactive **Streamlit dashboard** to predict customer churn.
 
+
+## 🚀 Live Demo
+**[View Dashboard → https://diya-churn-dashboard.streamlit.app](https://diya-churn-dashboard.streamlit.app)**
+
+## 📌 About This Project
+This project solves a real business problem: identifying customers at risk of churning.
+It includes data generation, SQL analysis, ML modeling, and a deployed web app.
+
 ## Project Structure
 
 ```
