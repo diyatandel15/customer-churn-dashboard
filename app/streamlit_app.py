@@ -202,7 +202,7 @@ def main():
     # HEADER WITH LOGO
     col1, col2 = st.columns([1, 6])
     with col1:
-        st.image("https://cdn-icons-png.flaticon.com/512/2721/2721621.png", width=80)  # AI/Analytics icon  
+        st.image("https://cdn-icons-png.flaticon.com/512/2103/2103633.png", width=80)  # AI/Analytics icon  
     with col2:
         st.title("Customer Churn Prediction Dashboard")
         st.markdown("*Powered by Machine Learning | Data-Driven Retention Insights*")
