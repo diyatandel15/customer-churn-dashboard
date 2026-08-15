@@ -27,17 +27,6 @@ st.set_page_config(
     page_icon="📊",
     layout="wide",
 )
-# --- NEW HEADER WITH LOGO ---
-col1, col2 = st.columns([1, 5])
-
-with col1:
-    st.image("https://cdn-icons-png.flaticon.com/512/2991/2991148.png", width=80)
-
-with col2:
-    st.title("Diya's Customer Churn Dashboard")
-    st.markdown("**Predict which customers are at risk of leaving**")
-    st.markdown("---")
-# --- END HEADER ---
 
 
 @st.cache_resource
