@@ -14,10 +14,10 @@ It includes data generation, SQL analysis, ML modeling, and a deployed web app.
 
 ```
 Customer_Churn_SQL_Project/
+Customer_Churn_SQL_Project/
 ├── data/
-│   └── customers.csv         
-├── models/
-│   └── churn_model.joblib     # Trained ML model
+│   ├── customers.csv
+│   └── churn_model.joblib  # Trained ML model      
 ├── notebooks/
 │   ├── 01_EDA.ipynb           # Exploratory data analysis
 │   └── 02_Model.ipynb         # Model training & evaluation
