@@ -22,7 +22,7 @@ NUMERIC_FEATURES = ["age", "tenure", "monthly_charges", "total_charges"]
 CATEGORICAL_FEATURES = ["contract_type", "payment_method"]
 REQUIRED_COLUMNS = ["customer_id"] + NUMERIC_FEATURES + CATEGORICAL_FEATURES
 
-st.set_page_config(
+st.set_page_config( 
     page_title="Diya's Customer Churn Dashboard",
     page_icon="📊",
     layout="wide",
