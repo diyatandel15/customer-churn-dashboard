@@ -13,6 +13,7 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
+
 # Project root for model path resolution
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(PROJECT_ROOT, "data", "churn_model.joblib")
@@ -21,8 +22,8 @@ NUMERIC_FEATURES = ["age", "tenure", "monthly_charges", "total_charges"]
 CATEGORICAL_FEATURES = ["contract_type", "payment_method"]
 REQUIRED_COLUMNS = ["customer_id"] + NUMERIC_FEATURES + CATEGORICAL_FEATURES
 
-st.set_page_config(
-    page_title="Customer Churn Dashboard",
+st.set_page_config( 
+    page_title="Diya's Customer Churn Dashboard",
     page_icon="📊",
     layout="wide",
 )
@@ -197,13 +198,18 @@ def render_single_prediction(model):
             st.error(f"⚠️ High Risk to Churn! Probability: {prob:.2%}")
         else:
             st.success(f"✅ Low Risk. Will Stay. Probability: {1-prob:.2%}")
-
 def main():
-    st.title("Customer Churn Prediction Dashboard")
-    st.markdown(
-        "Upload a customer CSV to explore the data and predict churn using the trained ML model."
-    )
+    # HEADER WITH LOGO
+    col1, col2 = st.columns([1, 6])
+    with col1:
+        st.image("https://i.imgur.com/8Km9tLL.png", width=80)  # temp logo
+    with col2:
+        st.title("Customer Churn Prediction Dashboard")
+        st.markdown("*Powered by Machine Learning | Data-Driven Retention Insights*")
 
+    st.markdown("Upload a customer CSV to explore the data and predict churn using the trained ML model.")
+    st.markdown("---")
+    
     model = load_model()
 
     uploaded_file = st.file_uploader("Upload customer CSV", type=["csv"])
