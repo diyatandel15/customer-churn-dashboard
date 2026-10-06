@@ -166,7 +166,8 @@ Customer-Churn-Prediction/
 ├── .gitignore
 │
 └── .streamlit/
-    └── config.toml ```
+    └── config.toml 
+```
 
 
 ## File Description
@@ -197,3 +198,49 @@ Customer-Churn-Prediction/
 - Streamlit – Web application development
 - SQL – Data querying
 - Jupyter Notebook – Data analysis and model development
+
+## How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/diyatandel15/customer-churn-dashboard.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd customer-churn-dashboard
+```
+
+### 2. Install the Required Libraries
+
+Open a terminal in the project folder and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit Application
+
+```bash
+python -m streamlit run app.py
+```
+
+The application will open in your browser.
+
+---
+
+## Business Objective
+
+Customer churn can lead to revenue loss for a company.
+
+A churn prediction model can help businesses identify customers who may be likely to leave and allow them to take appropriate customer retention actions.
+
+This project demonstrates how machine learning can be used to support customer retention decisions.
+
+---
+
+## Disclaimer
+
+The prediction is based on the trained machine-learning model and is not a guarantee of actual customer behavior.
